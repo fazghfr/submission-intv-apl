@@ -18,7 +18,6 @@ func main() {
 	// print kotak
 	str := ""
 	for i := 0; i < n; i++ {
-		str += "="
 		// if i ==0 atau i == n - 1, print = sebanyak n kali
 		// selain itu, print | sebanyak 2 kali, hanya pada kolom pertama dan terakhir
 		for j := 0; j < n; j++ {
