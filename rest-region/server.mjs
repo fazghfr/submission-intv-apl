@@ -58,10 +58,8 @@ async function bootstrap() {
                     const kabData = await response.json();
                     console.log('Kabupaten API response:', JSON.stringify(kabData).substring(0, 200) + '...');
 
-                    // Debugging structure if it's not an array
                     let kabList = kabData;
                     if (!Array.isArray(kabData)) {
-                        console.log('kabData is not an array, checking .result property...');
                         if (kabData.result && Array.isArray(kabData.result)) {
                             kabList = kabData.result;
                         } else {
